@@ -1,0 +1,57 @@
+/* Importando a fonte Nunito do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+/* Definindo variáveis de cor para fácil manutenção */
+:root {
+  --primary-color: #27AE60;
+  --secondary-color: #BDBDBD;
+  --danger-color: #E74C3C;
+  --text-color: #333333;
+  --background-color: #FFFFFF;
+  --light-gray-background: #F2F2F2;
+  --border-color: #BDBDBD;
+}
+
+/* Reset básico e estilos globais */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Nunito', sans-serif; color: var(--text-color); background-color: var(--background-color); }
+#app { max-width: 1280px; margin: 0 auto; font-weight: normal; }
+h2 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
+a { text-decoration: none; color: var(--primary-color); }
+
+/* Estilos dos botões reutilizáveis */
+.btn { padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 700; font-size: 16px; border: none; transition: opacity 0.3s ease; }
+.btn:hover { opacity: 0.85; }
+.btn-primary { background-color: var(--primary-color); color: white; }
+.btn-secondary { background-color: white; color: var(--text-color); border: 1px solid var(--border-color); }
+.btn-danger { background-color: var(--danger-color); color: white; }
+
+
+/* --- SEÇÃO DE ESTILOS GLOBAIS PARA FORMULÁRIOS (VERSÃO ULTRA-ESPECÍFICA) --- */
+
+/* Esta regra agora se aplica a qualquer input DENTRO de um .form-group */
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+  background-clip: padding-box;
+}
+
+/* Esta regra de foco agora é mais específica e vai sobrescrever a da extensão */
+.form-group input:focus {
+  outline: none !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2) !important;
+}
+
+/* Regra extra de segurança para o Firefox */
+.form-group input::-moz-focus-inner {
+  border: 0 !important;
+  padding: 0 !important;
+}
