@@ -2,7 +2,7 @@
 
 <p align="center">
   <!-- Dica: Tire um screenshot da sua aplicação, suba no imgur.com e cole o link da imagem aqui -->
-  <img src="https://i.imgur.com/your-image-url.png" alt="Screenshot da página inicial do Conecta Alimento" width="700"/>
+  <img src="https://i.imgur.com/jbqqLP4.png" alt="Screenshot da página inicial do Conecta Alimento" width="700"/>
 </p>
 
 ## 📖 Sobre o Projeto
